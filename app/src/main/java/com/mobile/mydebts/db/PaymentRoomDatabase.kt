@@ -1,9 +1,9 @@
-package com.mobile.mydebts
+package com.mobile.mydebts.db
 
-import android.content.Context
 import androidx.room.Database
-import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.mobile.mydebts.db.PaymentDao
+import com.mobile.mydebts.model.Payment
 
 @Database(entities = [Payment::class], version = 1, exportSchema = false)
 abstract class PaymentRoomDatabase : RoomDatabase() {

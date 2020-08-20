@@ -1,4 +1,4 @@
-package com.mobile.mydebts
+package com.mobile.mydebts.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

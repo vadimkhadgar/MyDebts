@@ -1,7 +1,8 @@
-package com.mobile.mydebts
+package com.mobile.mydebts.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.mobile.mydebts.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

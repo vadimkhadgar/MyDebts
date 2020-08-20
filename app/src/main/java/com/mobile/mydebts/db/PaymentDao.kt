@@ -1,7 +1,8 @@
-package com.mobile.mydebts
+package com.mobile.mydebts.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import com.mobile.mydebts.model.Payment
 
 @Dao
 interface PaymentDao {

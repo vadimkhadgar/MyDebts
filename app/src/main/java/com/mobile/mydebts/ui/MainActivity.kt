@@ -1,9 +1,9 @@
-package com.mobile.mydebts
+package com.mobile.mydebts.ui
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.mobile.mydebts.R
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*
 

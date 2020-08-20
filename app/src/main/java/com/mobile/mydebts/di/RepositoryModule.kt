@@ -1,5 +1,7 @@
-package com.mobile.mydebts
+package com.mobile.mydebts.di
 
+import com.mobile.mydebts.db.PaymentDao
+import com.mobile.mydebts.db.PaymentsRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

@@ -1,8 +1,8 @@
-package com.mobile.mydebts
+package com.mobile.mydebts.ui
 
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel
-import javax.inject.Inject
+import com.mobile.mydebts.db.PaymentsRepository
 
 class PaymentsViewModel @ViewModelInject constructor(private val paymentsRepository: PaymentsRepository) :
     ViewModel() {

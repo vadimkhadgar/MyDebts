@@ -1,7 +1,9 @@
-package com.mobile.mydebts
+package com.mobile.mydebts.di
 
 import android.app.Application
 import androidx.room.Room
+import com.mobile.mydebts.db.PaymentDao
+import com.mobile.mydebts.db.PaymentRoomDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
