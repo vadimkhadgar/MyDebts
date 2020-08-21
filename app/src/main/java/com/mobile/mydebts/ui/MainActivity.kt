@@ -2,6 +2,7 @@ package com.mobile.mydebts.ui
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.mobile.mydebts.R
 import dagger.hilt.android.AndroidEntryPoint
@@ -19,11 +20,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         cardView2.setOnClickListener {
-            startActivity(Intent(this, LoanActivity::class.java).putExtra("Watch", "Watch"))
+            Toast.makeText(this, "Section in development", Toast.LENGTH_SHORT).show()
+            //   startActivity(Intent(this, LoanActivity::class.java).putExtra("Watch", "Watch"))
         }
 
         cardView3.setOnClickListener {
-            startActivity(Intent(this, LoanActivity::class.java).putExtra("Computer", "Computer"))
+            Toast.makeText(this, "Section in development", Toast.LENGTH_SHORT).show()
+            //  startActivity(Intent(this, LoanActivity::class.java).putExtra("Computer", "Computer"))
         }
     }
 }
