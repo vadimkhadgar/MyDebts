@@ -54,25 +54,6 @@ dependencies {
     kapt "androidx.lifecycle:lifecycle-compiler:$rootProject.archLifecycleVersion"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.archLifecycleVersion"
 
-//    // Hilt
-//    implementation "com.google.dagger:hilt-android:2.28-alpha"
-//    kapt "com.google.dagger:hilt-android-compiler:2.28-alpha"
-//
-//    // Hilt with jetpack integration
-//    implementation 'androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha02'
-//    kapt 'androidx.hilt:hilt-compiler:1.0.0-alpha02'
-
-//    // architecture components
-//    implementation "androidx.fragment:fragment-ktx:$versions.fragmentVersion"
-//    implementation "androidx.lifecycle:lifecycle-extensions:$versions.lifecycleVersion"
-//    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$versions.lifecycleVersion"
-//    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifecycleVersion"
-//    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$versions.lifecycleVersion"
-//    implementation "androidx.room:room-runtime:$versions.roomVersion"
-//    implementation "androidx.room:room-ktx:$versions.roomVersion"
-//    kapt "androidx.room:room-compiler:$versions.roomVersion"
-//    testImplementation "androidx.arch.core:core-testing:$versions.archCompomentVersion"
-
     // dagger
     implementation "com.google.dagger:hilt-android:2.28.3-alpha"
     implementation "com.google.dagger:hilt-android-testing:2.28.3-alpha"
