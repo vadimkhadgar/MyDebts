@@ -25,7 +25,7 @@ object PersistenceModule {
 
     @Provides
     @Singleton
-    fun providePokemonDao(paymentRoomDatabase: PaymentRoomDatabase): PaymentDao {
+    fun providePaymentDao(paymentRoomDatabase: PaymentRoomDatabase): PaymentDao {
         return paymentRoomDatabase.paymentDao()
     }
 }
