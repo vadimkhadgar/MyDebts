@@ -3,8 +3,8 @@ package com.mobile.mydebts.model
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "payments")
-data class Payment(
+@Entity(tableName = "paymentsPhoneLoan")
+data class PaymentPhone(
     @PrimaryKey
     val id: Int,
     val amountOfPayment: String,

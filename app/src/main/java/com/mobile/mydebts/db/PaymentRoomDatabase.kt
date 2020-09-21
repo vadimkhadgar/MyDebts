@@ -2,10 +2,9 @@ package com.mobile.mydebts.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.mobile.mydebts.db.PaymentDao
-import com.mobile.mydebts.model.Payment
+import com.mobile.mydebts.model.PaymentPhone
 
-@Database(entities = [Payment::class], version = 1, exportSchema = false)
+@Database(entities = [PaymentPhone::class], version = 1, exportSchema = false)
 abstract class PaymentRoomDatabase : RoomDatabase() {
 
     abstract fun paymentDao(): PaymentDao
