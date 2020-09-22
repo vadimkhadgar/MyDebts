@@ -10,7 +10,7 @@ import kotlinx.coroutines.launch
 class PaymentsViewModel @ViewModelInject constructor(private val paymentsRepository: PaymentsRepository) :
     ViewModel() {
 
-    fun getPayments() = viewModelScope.launch { paymentsRepository.getPayments() }
+    fun getPayments() = paymentsRepository.allPayments
 
     fun insertPayment(payment: PaymentPhone) =
         viewModelScope.launch { paymentsRepository.insert(payment) }

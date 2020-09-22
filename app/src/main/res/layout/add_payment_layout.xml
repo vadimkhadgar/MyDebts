@@ -6,7 +6,7 @@
     android:orientation="vertical">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/etAmountOfPayment"
+        android:id="@+id/layoutAmountOfPayment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -22,6 +22,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etAmountOfPayment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:digits="123456789."
@@ -29,7 +30,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/etQuantityOfPayments"
+        android:id="@+id/layoutQuantityOfPayments"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -43,9 +44,10 @@
         app:boxStrokeWidthFocused="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etAmountOfPayment">
+        app:layout_constraintTop_toBottomOf="@id/layoutAmountOfPayment">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etQuantityOfPayments"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:digits="123456789"
@@ -62,7 +64,7 @@
         android:background="@android:color/darker_gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etQuantityOfPayments" />
+        app:layout_constraintTop_toBottomOf="@id/layoutQuantityOfPayments" />
 
     <View
         android:id="@+id/divider1"
