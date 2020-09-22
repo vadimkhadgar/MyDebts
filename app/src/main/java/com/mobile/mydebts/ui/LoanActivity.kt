@@ -24,6 +24,7 @@ class LoanActivity : AppCompatActivity() {
 
         floatingActionButton.setOnClickListener {
             showAlertDialog()
+            viewModel.deleteAll()
         }
 
         viewModel.getPayments().observe(this, {
@@ -61,7 +62,7 @@ class LoanActivity : AppCompatActivity() {
         for ((t, x) in (0 until quantityOfPayments.toInt()).withIndex()) {
             viewModel.insertPayment(
                 PaymentPhone(
-                    id = x,
+                    id = x + 1,
                     amountOfPayment = amountOfPayments,
                     isPaid = false
                 )

@@ -18,4 +18,6 @@ class PaymentsViewModel @ViewModelInject constructor(private val paymentsReposit
     fun updatePayment(payment: PaymentPhone) =
         viewModelScope.launch { paymentsRepository.update(payment) }
 
+    fun deleteAll() = viewModelScope.launch { paymentsRepository.deleteAll() }
+
 }

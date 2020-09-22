@@ -33,7 +33,7 @@ class DebtAdapter internal constructor(context: Context) :
     override fun onBindViewHolder(holder: UserVH, position: Int) {
         val current = payments[position]
         holder.tvSerialNumber.text = "${current.id}."
-        holder.tvPayment.text = "${current.amountOfPayment} blr"
+        holder.tvPayment.text = "${current.amountOfPayment} BYN"
         if (current.isPaid) {
             // TODO: 22.09.2020
         } else {

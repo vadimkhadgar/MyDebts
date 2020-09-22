@@ -13,4 +13,6 @@ class PaymentsRepository @Inject constructor(private val paymentDao: PaymentDao)
 
     suspend fun update(payment: PaymentPhone) = paymentDao.update(payment = payment)
 
+    suspend fun deleteAll() = paymentDao.deleteAll()
+
 }
