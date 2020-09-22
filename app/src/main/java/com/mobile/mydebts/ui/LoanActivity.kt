@@ -31,8 +31,12 @@ class LoanActivity : AppCompatActivity() {
             if (it != null) {
                 adapter = DebtAdapter(this, object : DebtAdapter.OnItemClickListener {
                     override fun onPayClick(position: Int, paymentPhone: PaymentPhone) {
-                        paymentPhone.isPaid = true
-                        viewModel.updatePayment(paymentPhone)
+                        if (paymentPhone.isPaid) {
+                            return
+                        } else {
+                            paymentPhone.isPaid = true
+                            viewModel.updatePayment(paymentPhone)
+                        }
                     }
 
                 })
