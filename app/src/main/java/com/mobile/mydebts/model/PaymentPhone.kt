@@ -8,5 +8,5 @@ data class PaymentPhone(
     @PrimaryKey
     val id: Int,
     val amountOfPayment: String,
-    val isPaid: Boolean,
+    var isPaid: Boolean,
 )

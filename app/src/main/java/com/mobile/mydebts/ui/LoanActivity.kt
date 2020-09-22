@@ -29,7 +29,13 @@ class LoanActivity : AppCompatActivity() {
 
         viewModel.getPayments().observe(this, {
             if (it != null) {
-                adapter = DebtAdapter(this)
+                adapter = DebtAdapter(this, object : DebtAdapter.OnItemClickListener {
+                    override fun onPayClick(position: Int, paymentPhone: PaymentPhone) {
+                        paymentPhone.isPaid = true
+                        viewModel.updatePayment(paymentPhone)
+                    }
+
+                })
                 recyclerView.layoutManager = LinearLayoutManager(this)
                 recyclerView.adapter = adapter
                 adapter.setDataLogs(it)
