@@ -5,4 +5,6 @@
     <string name="phone_loan">Phone Loan</string>
     <string name="amount_of_payment">Amount of Payment</string>
     <string name="quantity_of_payment">Quantity of Payment</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
 </resources>
