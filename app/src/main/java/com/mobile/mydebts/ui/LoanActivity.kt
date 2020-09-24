@@ -42,6 +42,7 @@ class LoanActivity : AppCompatActivity() {
                 })
                 recyclerView.layoutManager = LinearLayoutManager(this)
                 recyclerView.adapter = adapter
+                recyclerView.setHasFixedSize(true)
                 adapter.setDataLogs(it)
             }
         })
